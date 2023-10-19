@@ -1,0 +1,28 @@
+UI = False
+
+def file1(x):
+    with open(x,"r")as file_1:
+        data1 = file_1.read()
+        list1 = []
+        list1=data1.split()
+        print(list1)
+
+def file2(x):
+    with open(x,"r")as file_1:
+        data1 = file_1.read()
+        list2 = []
+        list2=data1.split()
+        return list2
+    
+def compare(x1,x2):
+    list1 = x1
+    list2 = x2
+    
+
+def main():
+    filename1 = input("Enter the name of the first file:\n" if UI else "")
+    filename2 = input("Enter the name of the second file:\n" if UI else "")
+    file1(filename1)
+
+if __name__ == "__main__":
+    main()
